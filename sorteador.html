@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador Online</title>
+    <script src="sorteador.js"></script>
+</head>
+<body>
+    
+    <h1>Sorteador Online</h1>
+    <hr>
+    Informe o intervalo que você deseja para o sorteio (valores de x até y):
+    <br>
+    <br>
+    Menor número:
+    <br>
+    <input type="number" id="menor_numero" placeholder="Ex: 0">
+    <br>
+    Maior número:
+    <br>
+    <input type="number" id="maior_numero" placeholder="Ex: 5">
+    <hr>
+    Informe a quantidade de valores sorteados: (Caso nenhum valor for informado, será sorteado apenas 1 número)
+    <br>
+    <input type="number" id="quantificador_numeros" value="1" placeholder="Ex: 3">
+    <hr>
+    Números repetidos devem ser permitidos? (Sim/Não)
+    <br>
+    <input type="text" id="permitir_repetidos" placeholder="Ex: Sim/Não">
+    <hr>
+    <button onclick="sortear()">SORTEAR</button>
+    <hr>
+    <label id="resp"></label>
+    
+</body>
+</html>
